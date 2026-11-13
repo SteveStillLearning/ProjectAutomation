@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "practicesoftware": "npm run typecheck && playwright test --project=practicesoftware"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

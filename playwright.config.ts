@@ -7,11 +7,12 @@ export default defineConfig({
   use: {
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
+    headless: false
   },
   projects: [
     {
       name: 'practicesoftware',
-      testDir: './practicesoftware/tests',
+      testDir: './practicesoftwaretesting/tests',
       use: {
         baseURL: 'https://practicesoftwaretesting.com',
       },
